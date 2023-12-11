@@ -27,7 +27,11 @@ export class AuthService {
       password: "12345",
       type: "administrator"
     });
-    
+    this.users.push({
+      username: "magusalas",
+      password: "12345",
+      type: "administrator"
+    });
   }
 
   login(username: string, password:string):boolean {
