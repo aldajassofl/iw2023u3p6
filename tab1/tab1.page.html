@@ -59,15 +59,18 @@
           <ion-card-content>
             {{product.description}}
           </ion-card-content>
-          <ion-button expand="block" (click)="addToCart(product, i)">
-            <ion-icon name="cart-outline" ></ion-icon>
-          </ion-button>
-          <ion-button expand="block" (click)="openProductEditPage(product, i)">
-            <ion-icon name="create-outline"></ion-icon>
-          </ion-button>
-          <ion-button expand="block" (click)="deleteProduct(product)">
-            <ion-icon name="trash-outline"></ion-icon>
-          </ion-button>
+          <ion-row>
+            <ion-button expand="block" (click)="addToCart(product, i)">
+              <ion-icon name="cart-outline" ></ion-icon>
+            </ion-button>
+            <ion-button expand="block" (click)="openProductEditPage(product, i)">
+              <ion-icon name="create-outline"></ion-icon>
+            </ion-button>
+            <ion-button expand="block" (click)="deleteProduct(product)">
+              <ion-icon name="trash-outline"></ion-icon>
+            </ion-button>
+          </ion-row>
+          
         </ion-card>
       </ion-col>
     </ion-row>
